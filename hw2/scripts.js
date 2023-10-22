@@ -11,10 +11,8 @@ document.write (`Меня зовут ${name}. Мне ${age} лет. Я прож�
 
 
 //2
-//age = Number(age); // ?
-alert ( name + ' родился в ' + (2023 - age) + ' году');
 
-//console.log(age, typeof(age));
+alert ( name + ' родился в ' + (2023 - age) + ' году');
 
 //3
 
