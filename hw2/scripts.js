@@ -110,7 +110,7 @@ if ( days < 31) {
     console.log(month);
 }
 
-if (week < 7) {
+if (days < 7) {
     console.log('Меньше недели');
 } else {
     console.log(week);
