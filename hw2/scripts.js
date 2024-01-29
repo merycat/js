@@ -118,8 +118,33 @@ if (days < 7) {
 
 //10
 
-let months = Math.round(day / 31);
-console.log(months + ' месяц года');
+let months;
+
+if (day > 1 && day < 31){
+    months = 1;
+} else if (day > 32 && day< 60){
+    months = 2;
+} else if (day > 61 && day < 92){
+    months = 3;
+} else if (day > 93 && day < 122){
+    months = 4;
+} else if (day > 123 && day < 153){
+    months = 5;
+} else if (day > 154 && day < 183){
+    months = 6;
+} else if (day > 184 && day < 215){
+    months = 7;
+} else if (day > 216 && day < 245){
+    months = 8;
+} else if (day > 246 && day < 275){
+    months = 9;
+} else if (day > 276 && day < 306){
+    months = 10;
+} else if (day > 307 && day < 336){
+    months = 11;
+} else {
+    months = 12;
+}
 
 switch(months){
     case 1:
