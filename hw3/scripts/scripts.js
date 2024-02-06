@@ -1,3 +1,4 @@
+/*
 //1
 
 for (let i=1; i <= 50; i++) {
@@ -67,24 +68,54 @@ for (let i=0; i <= 10; i++){
 }
 
 //7
-let num = 0;
 let n = 1000;
+let i;
 
-for (let i = 0; n > 50; i++) {
+for (i = 0; n > 50; i++) {
     n /= 2;
 }
 
-console.log(n)
-console.log(num);
+console.log(n);
+console.log(i);
+
 
 //8
+
+let sum = 0;
+let i;
+
+for (i = 0;  ; i++) {
+
+let b = +prompt('введите число');
+
+if (b == '' || b == 0) break;
+
+if (isNaN(b)) {
+    console.log('ошибка ввода');
+    break;
+}
+
+sum += b;
+
+}
+
+console.log (sum);
+console.log (sum / i);
 
 
 //9
 
 let str = '4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57';
-
-
-
-
+let cur='', min, max;
+for (let i = 0; i < str.length; i++) {
+  cur += str[i];
+  if (+str[i] && !+str[i+1]) {
+    if (typeof min !== 'number' || cur < +min) min = +cur;
+    if (typeof max !== 'number' || cur > +max) max = +cur;
+    cur = '';
+  }
+}
+console.log('Min:', min, 'Max:', max)
+*/
 //10
+
